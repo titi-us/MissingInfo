@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF6208A316D1858300729B7A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6208A216D1858300729B7A /* MainViewController.m */; };
+		BF8B52C516CDECFC00976786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8B52C416CDECFC00976786 /* main.m */; };
+		BF8B52C716CDECFC00976786 /* MissingInfo.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8B52C616CDECFC00976786 /* MissingInfo.1 */; };
+		BF8B533D16CDEDBB00976786 /* DatabaseOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8B533C16CDEDBB00976786 /* DatabaseOperator.m */; };
+		BF8B534016CDEDD000976786 /* FileOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8B533F16CDEDD000976786 /* FileOperator.m */; };
+		BF9535C516D0627B00C0B8BB /* TaskOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9535C416D0627B00C0B8BB /* TaskOperator.m */; };
+		BF9535C816D0638F00C0B8BB /* ScriptRow.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9535C716D0638F00C0B8BB /* ScriptRow.m */; };
+		BF95363A16D0855100C0B8BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF95360516D084AD00C0B8BB /* Foundation.framework */; };
+		BF95364416D085BB00C0B8BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9535F916D0848700C0B8BB /* Cocoa.framework */; };
+		BF95364A16D085BB00C0B8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF95364816D085BB00C0B8BB /* InfoPlist.strings */; };
+		BF95364C16D085BB00C0B8BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95364B16D085BB00C0B8BB /* main.m */; };
+		BF95365016D085BB00C0B8BB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BF95364E16D085BB00C0B8BB /* Credits.rtf */; };
+		BF95365316D085BB00C0B8BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95365216D085BB00C0B8BB /* AppDelegate.m */; };
+		BF95365616D085BC00C0B8BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF95365416D085BC00C0B8BB /* MainMenu.xib */; };
+		BF95365A16D085C300C0B8BB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF95360316D084AD00C0B8BB /* AppKit.framework */; };
+		BF95365B16D085C300C0B8BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF95360416D084AD00C0B8BB /* CoreData.framework */; };
+		BF95365C16D085C300C0B8BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF95360516D084AD00C0B8BB /* Foundation.framework */; };
+		BF95365D16D085C800C0B8BB /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9DD25D16D042E000611AF6 /* libmysqlclient.a */; };
+		BF95366016D0868800C0B8BB /* DropView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95365F16D085E700C0B8BB /* DropView.m */; };
+		BF95366316D08AB500C0B8BB /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95366216D08AB500C0B8BB /* MainView.m */; };
+		BF95366416D08B3900C0B8BB /* FileOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8B533F16CDEDD000976786 /* FileOperator.m */; };
+		BF95366516D08B3C00C0B8BB /* DatabaseOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8B533C16CDEDBB00976786 /* DatabaseOperator.m */; };
+		BF95366616D08B3E00C0B8BB /* TaskOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9535C416D0627B00C0B8BB /* TaskOperator.m */; };
+		BF95366716D08B4000C0B8BB /* ScriptRow.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9535C716D0638F00C0B8BB /* ScriptRow.m */; };
+		BF95366A16D091E000C0B8BB /* MysqlInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95366916D091E000C0B8BB /* MysqlInfoView.m */; };
+		BF9DD25F16D042E000611AF6 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9DD25D16D042E000611AF6 /* libmysqlclient.a */; };
+		BFF35B9616D195620064B1F8 /* LoggerOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF35B9516D195620064B1F8 /* LoggerOperator.m */; };
+		BFF35B9716D195620064B1F8 /* LoggerOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF35B9516D195620064B1F8 /* LoggerOperator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF8B52BF16CDECFC00976786 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				BF8B52C716CDECFC00976786 /* MissingInfo.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF6208A116D1858300729B7A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BF6208A216D1858300729B7A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BF8B52C116CDECFC00976786 /* MissingInfo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MissingInfo; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8B52C416CDECFC00976786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF8B52C616CDECFC00976786 /* MissingInfo.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MissingInfo.1; sourceTree = "<group>"; };
+		BF8B533B16CDEDBB00976786 /* DatabaseOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseOperator.h; sourceTree = "<group>"; };
+		BF8B533C16CDEDBB00976786 /* DatabaseOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseOperator.m; sourceTree = "<group>"; };
+		BF8B533E16CDEDD000976786 /* FileOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOperator.h; sourceTree = "<group>"; };
+		BF8B533F16CDEDD000976786 /* FileOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileOperator.m; sourceTree = "<group>"; };
+		BF9535C316D0627B00C0B8BB /* TaskOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskOperator.h; sourceTree = "<group>"; };
+		BF9535C416D0627B00C0B8BB /* TaskOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskOperator.m; sourceTree = "<group>"; };
+		BF9535C616D0638F00C0B8BB /* ScriptRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptRow.h; sourceTree = "<group>"; };
+		BF9535C716D0638F00C0B8BB /* ScriptRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptRow.m; sourceTree = "<group>"; };
+		BF9535F916D0848700C0B8BB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BF95360316D084AD00C0B8BB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BF95360416D084AD00C0B8BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BF95360516D084AD00C0B8BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF95364316D085BB00C0B8BB /* MissingInfoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingInfoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF95364716D085BB00C0B8BB /* MissingInfoGUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MissingInfoGUI-Info.plist"; sourceTree = "<group>"; };
+		BF95364916D085BB00C0B8BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF95364B16D085BB00C0B8BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF95364D16D085BB00C0B8BB /* MissingInfoGUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingInfoGUI-Prefix.pch"; sourceTree = "<group>"; };
+		BF95364F16D085BB00C0B8BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BF95365116D085BB00C0B8BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF95365216D085BB00C0B8BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF95365516D085BC00C0B8BB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BF95365E16D085E700C0B8BB /* DropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropView.h; sourceTree = "<group>"; };
+		BF95365F16D085E700C0B8BB /* DropView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropView.m; sourceTree = "<group>"; };
+		BF95366116D08AB500C0B8BB /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		BF95366216D08AB500C0B8BB /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		BF95366816D091E000C0B8BB /* MysqlInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlInfoView.h; sourceTree = "<group>"; };
+		BF95366916D091E000C0B8BB /* MysqlInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlInfoView.m; sourceTree = "<group>"; };
+		BF9DD1B116D03E0600611AF6 /* MissingInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingInfo-Prefix.pch"; sourceTree = "<group>"; };
+		BF9DD21516D042E000611AF6 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		BF9DD21616D042E000611AF6 /* EXCEPTIONS-CLIENT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "EXCEPTIONS-CLIENT"; sourceTree = "<group>"; };
+		BF9DD21916D042E000611AF6 /* gcc_builtins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_builtins.h; sourceTree = "<group>"; };
+		BF9DD21A16D042E000611AF6 /* generic-msvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "generic-msvc.h"; sourceTree = "<group>"; };
+		BF9DD21B16D042E000611AF6 /* nolock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nolock.h; sourceTree = "<group>"; };
+		BF9DD21C16D042E000611AF6 /* rwlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rwlock.h; sourceTree = "<group>"; };
+		BF9DD21D16D042E000611AF6 /* x86-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86-gcc.h"; sourceTree = "<group>"; };
+		BF9DD21E16D042E000611AF6 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		BF9DD21F16D042E000611AF6 /* config-win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "config-win.h"; sourceTree = "<group>"; };
+		BF9DD22016D042E000611AF6 /* decimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decimal.h; sourceTree = "<group>"; };
+		BF9DD22116D042E000611AF6 /* errmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errmsg.h; sourceTree = "<group>"; };
+		BF9DD22216D042E000611AF6 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		BF9DD22316D042E000611AF6 /* keycache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keycache.h; sourceTree = "<group>"; };
+		BF9DD22416D042E000611AF6 /* lf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lf.h; sourceTree = "<group>"; };
+		BF9DD22516D042E000611AF6 /* m_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
+		BF9DD22616D042E000611AF6 /* m_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
+		BF9DD22716D042E000611AF6 /* my_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_aes.h; sourceTree = "<group>"; };
+		BF9DD22816D042E000611AF6 /* my_alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alarm.h; sourceTree = "<group>"; };
+		BF9DD22916D042E000611AF6 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		BF9DD22A16D042E000611AF6 /* my_atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_atomic.h; sourceTree = "<group>"; };
+		BF9DD22B16D042E000611AF6 /* my_attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_attribute.h; sourceTree = "<group>"; };
+		BF9DD22C16D042E000611AF6 /* my_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_base.h; sourceTree = "<group>"; };
+		BF9DD22D16D042E000611AF6 /* my_bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_bit.h; sourceTree = "<group>"; };
+		BF9DD22E16D042E000611AF6 /* my_bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_bitmap.h; sourceTree = "<group>"; };
+		BF9DD22F16D042E000611AF6 /* my_charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_charsets.h; sourceTree = "<group>"; };
+		BF9DD23016D042E000611AF6 /* my_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_config.h; sourceTree = "<group>"; };
+		BF9DD23116D042E000611AF6 /* my_dbug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dbug.h; sourceTree = "<group>"; };
+		BF9DD23216D042E000611AF6 /* my_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dir.h; sourceTree = "<group>"; };
+		BF9DD23316D042E000611AF6 /* my_getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_getopt.h; sourceTree = "<group>"; };
+		BF9DD23416D042E000611AF6 /* my_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_global.h; sourceTree = "<group>"; };
+		BF9DD23516D042E000611AF6 /* my_libwrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_libwrap.h; sourceTree = "<group>"; };
+		BF9DD23616D042E000611AF6 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		BF9DD23716D042E000611AF6 /* my_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_md5.h; sourceTree = "<group>"; };
+		BF9DD23816D042E000611AF6 /* my_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_net.h; sourceTree = "<group>"; };
+		BF9DD23916D042E000611AF6 /* my_no_pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_no_pthread.h; sourceTree = "<group>"; };
+		BF9DD23A16D042E000611AF6 /* my_nosys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_nosys.h; sourceTree = "<group>"; };
+		BF9DD23B16D042E000611AF6 /* my_pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_pthread.h; sourceTree = "<group>"; };
+		BF9DD23C16D042E000611AF6 /* my_stacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_stacktrace.h; sourceTree = "<group>"; };
+		BF9DD23D16D042E000611AF6 /* my_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_sys.h; sourceTree = "<group>"; };
+		BF9DD23E16D042E000611AF6 /* my_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_time.h; sourceTree = "<group>"; };
+		BF9DD23F16D042E000611AF6 /* my_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_tree.h; sourceTree = "<group>"; };
+		BF9DD24016D042E000611AF6 /* my_trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_trie.h; sourceTree = "<group>"; };
+		BF9DD24116D042E000611AF6 /* my_uctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_uctype.h; sourceTree = "<group>"; };
+		BF9DD24216D042E000611AF6 /* my_vle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_vle.h; sourceTree = "<group>"; };
+		BF9DD24316D042E000611AF6 /* my_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_xml.h; sourceTree = "<group>"; };
+		BF9DD24416D042E000611AF6 /* myisampack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myisampack.h; sourceTree = "<group>"; };
+		BF9DD24516D042E000611AF6 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		BF9DD24616D042E000611AF6 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		BF9DD24716D042E000611AF6 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		BF9DD24816D042E000611AF6 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		BF9DD24916D042E000611AF6 /* mysqld_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_error.h; sourceTree = "<group>"; };
+		BF9DD24B16D042E000611AF6 /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		BF9DD24C16D042E000611AF6 /* mysys_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysys_err.h; sourceTree = "<group>"; };
+		BF9DD24D16D042E000611AF6 /* queues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queues.h; sourceTree = "<group>"; };
+		BF9DD24E16D042E000611AF6 /* service_versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_versions.h; sourceTree = "<group>"; };
+		BF9DD24F16D042E000611AF6 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		BF9DD25016D042E000611AF6 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		BF9DD25116D042E000611AF6 /* sql_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_common.h; sourceTree = "<group>"; };
+		BF9DD25216D042E000611AF6 /* sslopt-case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-case.h"; sourceTree = "<group>"; };
+		BF9DD25316D042E000611AF6 /* sslopt-longopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
+		BF9DD25416D042E000611AF6 /* sslopt-vars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
+		BF9DD25516D042E000611AF6 /* t_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = t_ctype.h; sourceTree = "<group>"; };
+		BF9DD25616D042E000611AF6 /* thr_alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_alarm.h; sourceTree = "<group>"; };
+		BF9DD25716D042E000611AF6 /* thr_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_lock.h; sourceTree = "<group>"; };
+		BF9DD25816D042E000611AF6 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		BF9DD25916D042E000611AF6 /* violite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = violite.h; sourceTree = "<group>"; };
+		BF9DD25A16D042E000611AF6 /* waiting_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waiting_threads.h; sourceTree = "<group>"; };
+		BF9DD25B16D042E000611AF6 /* wqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wqueue.h; sourceTree = "<group>"; };
+		BF9DD25D16D042E000611AF6 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		BF9DD25E16D042E000611AF6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BFF35B9416D195620064B1F8 /* LoggerOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerOperator.h; sourceTree = "<group>"; };
+		BFF35B9516D195620064B1F8 /* LoggerOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerOperator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8B52BE16CDECFC00976786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF95363A16D0855100C0B8BB /* Foundation.framework in Frameworks */,
+				BF9DD25F16D042E000611AF6 /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF95364016D085BB00C0B8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF95364416D085BB00C0B8BB /* Cocoa.framework in Frameworks */,
+				BF95365A16D085C300C0B8BB /* AppKit.framework in Frameworks */,
+				BF95365B16D085C300C0B8BB /* CoreData.framework in Frameworks */,
+				BF95365C16D085C300C0B8BB /* Foundation.framework in Frameworks */,
+				BF95365D16D085C800C0B8BB /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8B52B816CDECFC00976786 = {
+			isa = PBXGroup;
+			children = (
+				BF8B52C316CDECFC00976786 /* MissingInfo */,
+				BF95364516D085BB00C0B8BB /* MissingInfoGUI */,
+				BF9DD1AF16D03D9A00611AF6 /* Frameworks */,
+				BF8B52C216CDECFC00976786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8B52C216CDECFC00976786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B52C116CDECFC00976786 /* MissingInfo */,
+				BF95364316D085BB00C0B8BB /* MissingInfoGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8B52C316CDECFC00976786 /* MissingInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD21416D042E000611AF6 /* MysqlClientWrapper */,
+				BF8B52C416CDECFC00976786 /* main.m */,
+				BF9DD1B016D03DBD00611AF6 /* Supporting Files */,
+				BF8B533E16CDEDD000976786 /* FileOperator.h */,
+				BF8B533F16CDEDD000976786 /* FileOperator.m */,
+				BF8B52C616CDECFC00976786 /* MissingInfo.1 */,
+				BF8B533B16CDEDBB00976786 /* DatabaseOperator.h */,
+				BF8B533C16CDEDBB00976786 /* DatabaseOperator.m */,
+				BF9535C316D0627B00C0B8BB /* TaskOperator.h */,
+				BFF35B9416D195620064B1F8 /* LoggerOperator.h */,
+				BFF35B9516D195620064B1F8 /* LoggerOperator.m */,
+				BF9535C416D0627B00C0B8BB /* TaskOperator.m */,
+				BF9535C616D0638F00C0B8BB /* ScriptRow.h */,
+				BF9535C716D0638F00C0B8BB /* ScriptRow.m */,
+			);
+			path = MissingInfo;
+			sourceTree = "<group>";
+		};
+		BF95360216D084AD00C0B8BB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF95360316D084AD00C0B8BB /* AppKit.framework */,
+				BF95360416D084AD00C0B8BB /* CoreData.framework */,
+				BF95360516D084AD00C0B8BB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BF95364516D085BB00C0B8BB /* MissingInfoGUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF95365116D085BB00C0B8BB /* AppDelegate.h */,
+				BF95365E16D085E700C0B8BB /* DropView.h */,
+				BF95365F16D085E700C0B8BB /* DropView.m */,
+				BF95366816D091E000C0B8BB /* MysqlInfoView.h */,
+				BF95366916D091E000C0B8BB /* MysqlInfoView.m */,
+				BF95366116D08AB500C0B8BB /* MainView.h */,
+				BF95366216D08AB500C0B8BB /* MainView.m */,
+				BF6208A116D1858300729B7A /* MainViewController.h */,
+				BF6208A216D1858300729B7A /* MainViewController.m */,
+				BF95365216D085BB00C0B8BB /* AppDelegate.m */,
+				BF95365416D085BC00C0B8BB /* MainMenu.xib */,
+				BF95364616D085BB00C0B8BB /* Supporting Files */,
+			);
+			path = MissingInfoGUI;
+			sourceTree = "<group>";
+		};
+		BF95364616D085BB00C0B8BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF95364716D085BB00C0B8BB /* MissingInfoGUI-Info.plist */,
+				BF95364816D085BB00C0B8BB /* InfoPlist.strings */,
+				BF95364B16D085BB00C0B8BB /* main.m */,
+				BF95364D16D085BB00C0B8BB /* MissingInfoGUI-Prefix.pch */,
+				BF95364E16D085BB00C0B8BB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF9DD1AF16D03D9A00611AF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF9535F916D0848700C0B8BB /* Cocoa.framework */,
+				BF95360216D084AD00C0B8BB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			path = MissingInfo;
+			sourceTree = "<group>";
+		};
+		BF9DD1B016D03DBD00611AF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD1B116D03E0600611AF6 /* MissingInfo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF9DD21416D042E000611AF6 /* MysqlClientWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD21516D042E000611AF6 /* COPYING */,
+				BF9DD21616D042E000611AF6 /* EXCEPTIONS-CLIENT */,
+				BF9DD21716D042E000611AF6 /* include */,
+				BF9DD25C16D042E000611AF6 /* lib */,
+				BF9DD25E16D042E000611AF6 /* README */,
+			);
+			path = MysqlClientWrapper;
+			sourceTree = "<group>";
+		};
+		BF9DD21716D042E000611AF6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD21816D042E000611AF6 /* atomic */,
+				BF9DD21E16D042E000611AF6 /* base64.h */,
+				BF9DD21F16D042E000611AF6 /* config-win.h */,
+				BF9DD22016D042E000611AF6 /* decimal.h */,
+				BF9DD22116D042E000611AF6 /* errmsg.h */,
+				BF9DD22216D042E000611AF6 /* hash.h */,
+				BF9DD22316D042E000611AF6 /* keycache.h */,
+				BF9DD22416D042E000611AF6 /* lf.h */,
+				BF9DD22516D042E000611AF6 /* m_ctype.h */,
+				BF9DD22616D042E000611AF6 /* m_string.h */,
+				BF9DD22716D042E000611AF6 /* my_aes.h */,
+				BF9DD22816D042E000611AF6 /* my_alarm.h */,
+				BF9DD22916D042E000611AF6 /* my_alloc.h */,
+				BF9DD22A16D042E000611AF6 /* my_atomic.h */,
+				BF9DD22B16D042E000611AF6 /* my_attribute.h */,
+				BF9DD22C16D042E000611AF6 /* my_base.h */,
+				BF9DD22D16D042E000611AF6 /* my_bit.h */,
+				BF9DD22E16D042E000611AF6 /* my_bitmap.h */,
+				BF9DD22F16D042E000611AF6 /* my_charsets.h */,
+				BF9DD23016D042E000611AF6 /* my_config.h */,
+				BF9DD23116D042E000611AF6 /* my_dbug.h */,
+				BF9DD23216D042E000611AF6 /* my_dir.h */,
+				BF9DD23316D042E000611AF6 /* my_getopt.h */,
+				BF9DD23416D042E000611AF6 /* my_global.h */,
+				BF9DD23516D042E000611AF6 /* my_libwrap.h */,
+				BF9DD23616D042E000611AF6 /* my_list.h */,
+				BF9DD23716D042E000611AF6 /* my_md5.h */,
+				BF9DD23816D042E000611AF6 /* my_net.h */,
+				BF9DD23916D042E000611AF6 /* my_no_pthread.h */,
+				BF9DD23A16D042E000611AF6 /* my_nosys.h */,
+				BF9DD23B16D042E000611AF6 /* my_pthread.h */,
+				BF9DD23C16D042E000611AF6 /* my_stacktrace.h */,
+				BF9DD23D16D042E000611AF6 /* my_sys.h */,
+				BF9DD23E16D042E000611AF6 /* my_time.h */,
+				BF9DD23F16D042E000611AF6 /* my_tree.h */,
+				BF9DD24016D042E000611AF6 /* my_trie.h */,
+				BF9DD24116D042E000611AF6 /* my_uctype.h */,
+				BF9DD24216D042E000611AF6 /* my_vle.h */,
+				BF9DD24316D042E000611AF6 /* my_xml.h */,
+				BF9DD24416D042E000611AF6 /* myisampack.h */,
+				BF9DD24516D042E000611AF6 /* mysql.h */,
+				BF9DD24616D042E000611AF6 /* mysql_com.h */,
+				BF9DD24716D042E000611AF6 /* mysql_time.h */,
+				BF9DD24816D042E000611AF6 /* mysql_version.h */,
+				BF9DD24916D042E000611AF6 /* mysqld_error.h */,
+				BF9DD24A16D042E000611AF6 /* mysys */,
+				BF9DD24C16D042E000611AF6 /* mysys_err.h */,
+				BF9DD24D16D042E000611AF6 /* queues.h */,
+				BF9DD24E16D042E000611AF6 /* service_versions.h */,
+				BF9DD24F16D042E000611AF6 /* sha1.h */,
+				BF9DD25016D042E000611AF6 /* sha2.h */,
+				BF9DD25116D042E000611AF6 /* sql_common.h */,
+				BF9DD25216D042E000611AF6 /* sslopt-case.h */,
+				BF9DD25316D042E000611AF6 /* sslopt-longopts.h */,
+				BF9DD25416D042E000611AF6 /* sslopt-vars.h */,
+				BF9DD25516D042E000611AF6 /* t_ctype.h */,
+				BF9DD25616D042E000611AF6 /* thr_alarm.h */,
+				BF9DD25716D042E000611AF6 /* thr_lock.h */,
+				BF9DD25816D042E000611AF6 /* typelib.h */,
+				BF9DD25916D042E000611AF6 /* violite.h */,
+				BF9DD25A16D042E000611AF6 /* waiting_threads.h */,
+				BF9DD25B16D042E000611AF6 /* wqueue.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BF9DD21816D042E000611AF6 /* atomic */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD21916D042E000611AF6 /* gcc_builtins.h */,
+				BF9DD21A16D042E000611AF6 /* generic-msvc.h */,
+				BF9DD21B16D042E000611AF6 /* nolock.h */,
+				BF9DD21C16D042E000611AF6 /* rwlock.h */,
+				BF9DD21D16D042E000611AF6 /* x86-gcc.h */,
+			);
+			path = atomic;
+			sourceTree = "<group>";
+		};
+		BF9DD24A16D042E000611AF6 /* mysys */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD24B16D042E000611AF6 /* rijndael.h */,
+			);
+			path = mysys;
+			sourceTree = "<group>";
+		};
+		BF9DD25C16D042E000611AF6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DD25D16D042E000611AF6 /* libmysqlclient.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8B52C016CDECFC00976786 /* MissingInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8B52CA16CDECFC00976786 /* Build configuration list for PBXNativeTarget "MissingInfo" */;
+			buildPhases = (
+				BF8B52BD16CDECFC00976786 /* Sources */,
+				BF8B52BE16CDECFC00976786 /* Frameworks */,
+				BF8B52BF16CDECFC00976786 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MissingInfo;
+			productName = MissingInfo;
+			productReference = BF8B52C116CDECFC00976786 /* MissingInfo */;
+			productType = "com.apple.product-type.tool";
+		};
+		BF95364216D085BB00C0B8BB /* MissingInfoGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF95365716D085BC00C0B8BB /* Build configuration list for PBXNativeTarget "MissingInfoGUI" */;
+			buildPhases = (
+				BF95363F16D085BB00C0B8BB /* Sources */,
+				BF95364016D085BB00C0B8BB /* Frameworks */,
+				BF95364116D085BB00C0B8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MissingInfoGUI;
+			productName = MissingInfoGUI;
+			productReference = BF95364316D085BB00C0B8BB /* MissingInfoGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8B52B916CDECFC00976786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Thibaut;
+			};
+			buildConfigurationList = BF8B52BC16CDECFC00976786 /* Build configuration list for PBXProject "MissingInfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF8B52B816CDECFC00976786;
+			productRefGroup = BF8B52C216CDECFC00976786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8B52C016CDECFC00976786 /* MissingInfo */,
+				BF95364216D085BB00C0B8BB /* MissingInfoGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF95364116D085BB00C0B8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF95364A16D085BB00C0B8BB /* InfoPlist.strings in Resources */,
+				BF95365016D085BB00C0B8BB /* Credits.rtf in Resources */,
+				BF95365616D085BC00C0B8BB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8B52BD16CDECFC00976786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8B52C516CDECFC00976786 /* main.m in Sources */,
+				BF8B533D16CDEDBB00976786 /* DatabaseOperator.m in Sources */,
+				BF8B534016CDEDD000976786 /* FileOperator.m in Sources */,
+				BF9535C516D0627B00C0B8BB /* TaskOperator.m in Sources */,
+				BF9535C816D0638F00C0B8BB /* ScriptRow.m in Sources */,
+				BFF35B9616D195620064B1F8 /* LoggerOperator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF95363F16D085BB00C0B8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF95366016D0868800C0B8BB /* DropView.m in Sources */,
+				BF95364C16D085BB00C0B8BB /* main.m in Sources */,
+				BF95365316D085BB00C0B8BB /* AppDelegate.m in Sources */,
+				BF95366516D08B3C00C0B8BB /* DatabaseOperator.m in Sources */,
+				BF95366316D08AB500C0B8BB /* MainView.m in Sources */,
+				BF95366716D08B4000C0B8BB /* ScriptRow.m in Sources */,
+				BF95366616D08B3E00C0B8BB /* TaskOperator.m in Sources */,
+				BF95366416D08B3900C0B8BB /* FileOperator.m in Sources */,
+				BF95366A16D091E000C0B8BB /* MysqlInfoView.m in Sources */,
+				BF6208A316D1858300729B7A /* MainViewController.m in Sources */,
+				BFF35B9716D195620064B1F8 /* LoggerOperator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF95364816D085BB00C0B8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF95364916D085BB00C0B8BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF95364E16D085BB00C0B8BB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF95364F16D085BB00C0B8BB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BF95365416D085BC00C0B8BB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF95365516D085BC00C0B8BB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8B52C816CDECFC00976786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF8B52C916CDECFC00976786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BF8B52CB16CDECFC00976786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MissingInfo/ObjC_mysql_intel/lib\"",
+					"\"$(SRCROOT)/MissingInfo/MysqlClientWrapper/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF8B52CC16CDECFC00976786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MissingInfo/ObjC_mysql_intel/lib\"",
+					"\"$(SRCROOT)/MissingInfo/MysqlClientWrapper/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF95365816D085BC00C0B8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MissingInfoGUI/MissingInfoGUI-Prefix.pch";
+				INFOPLIST_FILE = "MissingInfoGUI/MissingInfoGUI-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MissingInfo/MysqlClientWrapper/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF95365916D085BC00C0B8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MissingInfoGUI/MissingInfoGUI-Prefix.pch";
+				INFOPLIST_FILE = "MissingInfoGUI/MissingInfoGUI-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MissingInfo/MysqlClientWrapper/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8B52BC16CDECFC00976786 /* Build configuration list for PBXProject "MissingInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8B52C816CDECFC00976786 /* Debug */,
+				BF8B52C916CDECFC00976786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8B52CA16CDECFC00976786 /* Build configuration list for PBXNativeTarget "MissingInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8B52CB16CDECFC00976786 /* Debug */,
+				BF8B52CC16CDECFC00976786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF95365716D085BC00C0B8BB /* Build configuration list for PBXNativeTarget "MissingInfoGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF95365816D085BC00C0B8BB /* Debug */,
+				BF95365916D085BC00C0B8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF8B52B916CDECFC00976786 /* Project object */;
+}
