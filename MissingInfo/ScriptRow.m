@@ -81,14 +81,14 @@ const NSString* EPF_COLLECTION_MATCH = @"epf_collection_match";
             [parametersDictionary setValue:[valuesArray objectAtIndex:1] forKey:[valuesArray objectAtIndex:0]];
         }
     }
-    NSString *itunesSongIdString = [parametersDictionary objectForKey:@"id"];
+    NSString *itunesSongIdString = [parametersDictionary objectForKey:@"i"];
     
     if (itunesSongIdString != nil)
     {
         itunesSongId = [itunesSongIdString intValue];
     } else
     {
-        NSLog(@"Error. Malformed URL");
+        NSLog(@"Error. Malformed URL %@", [itunesUrl query]);
     }
 }
 
@@ -106,37 +106,37 @@ const NSString* EPF_COLLECTION_MATCH = @"epf_collection_match";
 
 -(NSString*) getEpfSongMatchQuery
 {
-    return [NSString stringWithFormat:@"SELECT isrc FROM FROM %@ WHERE song_id=%i", EPF_SONG_MATCH, itunesSongId];
+    return [NSString stringWithFormat:@"SELECT isrc FROM %@ WHERE song_id=%i", EPF_SONG_MATCH, itunesSongId];
 }
 
 
 -(NSString*) getEpfCollectionMatchQuery
 {
-    return [NSString stringWithFormat:@"SELECT upc FROM %@ WHERE song_id=%i", EPF_COLLECTION_MATCH, collectionId];
+    return [NSString stringWithFormat:@"SELECT upc FROM %@ WHERE collection_id=%i", EPF_COLLECTION_MATCH, collectionId];
 }
 
 
 -(NSString*) getEpfCollectionQuery
 {
-    return [NSString stringWithFormat:@"SELECT label_studio, content_provider_name, copyright, p_line FROM %@ WHERE song_id=%i", EPF_COLLECTION, collectionId];
+    return [NSString stringWithFormat:@"SELECT label_studio, content_provider_name, copyright, p_line FROM %@ WHERE collection_id=%i", EPF_COLLECTION, collectionId];
 }
 
 
 -(void)updateWithEpfSong:(NSArray*)result
 {
     NSArray *data = [self fetchFirstRow:result];
-    if (data && data.count == 2 )
+    if (data && data.count == 3 )
     {
         originalReleaseDate = data[0];
-        pLine = data[2];
-        copyright = data[3];
+        pLine = data[1];
+        copyright = data[2];
     }
 }
 
 -(void)updateWithEpfSongMatch:(NSArray*)result
 {
     NSArray *data = [self fetchFirstRow:result];
-    if (data && data.count == 0 )
+    if (data && data.count == 1 )
     {
         isrc = data[0];
     }
@@ -146,7 +146,7 @@ const NSString* EPF_COLLECTION_MATCH = @"epf_collection_match";
 -(void)updateWithEpfCollectionMatch:(NSArray*)result
 {
     NSArray *data = [self fetchFirstRow:result];
-    if (data && data.count == 0 )
+    if (data && data.count == 1 )
     {
         upc = data[0];
     }

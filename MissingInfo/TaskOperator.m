@@ -40,8 +40,9 @@
         [resultArray addObject:row];
     }
     
+    NSString* outputPathFile = [[self filePath] stringByReplacingOccurrencesOfString:@".txt" withString:@"-formatted.txt"];
     
-    [fileOperator writeOutput:resultArray ToPath:@"/Users/thibaut/Desktop/campaigns-test.csv"];
+    [fileOperator writeOutput:resultArray ToPath:outputPathFile];
     
 }
 @end

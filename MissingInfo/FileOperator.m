@@ -42,7 +42,7 @@
     if (self.inputElements.count > position )
     {
         NSString* line = self.inputElements[position];
-        NSMutableArray* retVal = [NSMutableArray arrayWithArray:[line componentsSeparatedByString:@"," ]];
+        NSMutableArray* retVal = [NSMutableArray arrayWithArray:[line componentsSeparatedByString:@"\t" ]];
         return retVal;
     } else
     {
